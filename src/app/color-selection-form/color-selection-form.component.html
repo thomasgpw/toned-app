@@ -1,0 +1,23 @@
+<form id="colorSelectionForm">
+  <div
+  *ngFor='let colorOption of colorSelectionList; let i = index'
+  class='color-option'
+  >
+    <input
+    type="color"
+    class='color-input'
+    [value]='colorOption'
+    >
+    <img src="assets/iconmonstr-x-mark-1.svg"
+    alt="remove color"
+    [id]="i"
+    (click)='removeColorFunc($event)'
+    >
+  </div>
+  <input
+  type="button"
+  name="addColor"
+  value="add a color"
+  (click)='addColorFunc()'
+  >
+</form>

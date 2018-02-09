@@ -1,0 +1,64 @@
+:host {
+  position: absolute;
+  background: black;
+}
+form {
+  margin: auto;
+  position: relative;
+}
+input {
+  border: 2px solid white;
+}
+@media (orientation:landscape) {
+  :host {
+    height: 100%;
+    width: 150px;
+    bottom: 0;
+    right: -120px;
+    transition: right 0.5s;
+    -webkit-transition: right 0.5s;
+    -moz-transition: right 0.5s;
+    -ms-transition: right 0.5s;
+    -o-transition: right 0.5s;
+  }
+  :host(:hover) {
+    right: 0;
+  }
+  form {
+    top:5%;
+    width: 50%;
+    height: 90%;
+  }
+  input {
+    margin-top: 2px;
+    width: 100%;
+  }
+}
+@media (orientation:portrait) {
+  :host {
+    height: 150px;
+    width: 100%;
+    bottom: -120px;
+    right: 0;
+    transition: bottom 0.5s;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s;
+    -ms-transition: bottom 0.5s;
+    -o-transition: bottom 0.5s;
+  }
+  :host(:hover){
+    bottom: 0;
+  }
+  form {
+    top: 5%;
+    width: auto;
+    height: 85%;
+    overflow-x: scroll;
+    overflow-y: unset;
+  }
+  input {
+    margin-right: 5px;
+    height: 100%;
+    float: left;
+  }
+}

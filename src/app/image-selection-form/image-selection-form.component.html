@@ -1,0 +1,11 @@
+<form id="image-selection-form">
+  <input
+  *ngFor='let unalteredImage of unalteredImageCatalog; let i = index'
+  type="image"
+  [name]='unalteredImage.name'
+  [src]='unalteredImage.src'
+  [alt]='unalteredImage.alt'
+  [id]='i'
+  (click)='imageSelectFunc($event)'
+  >
+</form>

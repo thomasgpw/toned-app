@@ -1,0 +1,22 @@
+.color-option {
+  float: left;
+  height: 40px;
+  width: 80px;
+  background-color: red;
+  position: relative;
+  border: 2px solid black;
+}
+img {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  width: 15px;
+}
+img:hover {
+  cursor: pointer;
+}
+.color-input {
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+}
